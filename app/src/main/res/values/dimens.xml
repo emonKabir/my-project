@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="loginHeight">40dp</dimen>
+    <dimen name="loginTextsize">20sp</dimen>
+    <dimen name="loginMarginLeft">25dp</dimen>
+    <dimen name="loginMarginRight">25dp</dimen>
+    <dimen name="createNewAccountTextSize">18sp</dimen>
+    <dimen name="createNewAccountMarginBottom">20dp</dimen>
+    <dimen name="arrowSize">15dp</dimen>
+    <dimen name="thickness">0dp</dimen>
+    <dimen name="relativeMarginRight">5dp</dimen>
+    <dimen name="relativePaddingrRight">5dp</dimen>
+    <dimen name="headerTextviewSize">20sp</dimen>
+    <dimen name="registrationFieldMarginTop">6dp</dimen>
+    <dimen name="signInMarginTop">30dp</dimen>
+    <dimen name="signInMrginLeft">50dp</dimen>
+    <dimen name="signInMarginRight">50dp</dimen>
+    <dimen name="layoutMarginRight">35dp</dimen>
+    <dimen name="layoutMarginLeft">35dp</dimen>
+    <dimen name="layoutMarginTop">75dp</dimen>
+    <dimen name="edittextheight">40dp</dimen>
+    <dimen name="circleImageWidth">65dp</dimen>
+    <dimen name="circleImageHeight">65dp</dimen>
+    <dimen name="loginMarginTop">10dp</dimen>
+    <dimen name="edittextPaddingLeft">10dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="menuTextviewMarginTop">7dp</dimen>
+    <dimen name="menuTextPaddingLeft">13dp</dimen>
+    <dimen name="menuTexttxtSize">10sp</dimen>
+    <dimen name="menuTextPaddingRight">12dp</dimen>
+    <dimen name="fabCustomSize">60dp</dimen>
+    <dimen name="slider_height">160dp</dimen>
+    <dimen name="menuLayoutMargin">15dp</dimen>
+    <dimen name="fragmentM_top">53dp</dimen>
+    <dimen name="fragmentM_bottom">54dp</dimen>
+    <dimen name="blood_request_dPadding">10dp</dimen>
+    <dimen name="blood_request_tSize">25sp</dimen>
+    <dimen name="bloodRqstEditTextHeight">70dp</dimen>
+    <dimen name="layoutM_bottom">53dp</dimen>
+    <dimen name="menuItemMargin">10dp</dimen>
+    <dimen name="contactTxtSize">15sp</dimen>
+    <dimen name="tradeFontSize">12sp</dimen>
+    <dimen name="phrmaTxtSize">20sp</dimen>
+    <dimen name="diseaseListTextSize">12sp</dimen>
+    <dimen name="diseaseListTextMargin">10dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fifteenSp">15sp</dimen>
+    <dimen name="fourteenSp">14sp</dimen>
+
+</resources>

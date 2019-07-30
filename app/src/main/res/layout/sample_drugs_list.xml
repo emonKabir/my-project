@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutMain"
+        android:paddingTop="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_favorite_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="5dp"
+           android:paddingBottom="5dp"
+
+            android:layout_marginTop="1dp"
+
+            />
+        <ImageView
+            android:id="@+id/rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_details_black_24dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+
+            android:layout_below="@+id/fav"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/pills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_diamond"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/TradeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TradeName"
+            android:layout_toRightOf="@+id/pills"
+            android:textSize="@dimen/tradeFontSize"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/ericBlack"
+            />
+        <TextView
+            android:id="@+id/genericType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="genericType"
+            android:layout_toRightOf="@+id/TradeName"
+            android:textSize="@dimen/tradeFontSize"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/ericBlack"
+
+
+            />
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="company name"
+            android:textSize="15sp"
+            android:layout_toLeftOf="@+id/fav"
+            android:layout_marginRight="7dp"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorGreen"
+            />
+
+        <TextView
+            android:id="@+id/genericName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="genericName"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/companyName"
+            android:layout_toRightOf="@+id/pills"
+            android:textSize="15sp"
+            android:textColor="@color/ericBlack"
+            />
+
+
+
+       <!-- <TextView
+            android:id="@+id/Dose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dose"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/pills"
+            android:layout_below="@+id/genericName"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorGrey"
+
+
+            />
+
+        <TextView
+            android:id="@+id/Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="15sp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/genericName"
+            android:textColor="@color/colorGrey"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+
+            />-->
+
+
+
+    </RelativeLayout>
+
+
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hiddenLayout"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/priceTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/ericBlack"
+            android:layout_below="@id/Dose"
+
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>-->
+
+    <eu.davidea.flipview.FlipView
+        android:id="@+id/flip_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:outAnimation="@anim/shrink_to_middle_y_axis"
+        android:inAnimation="@anim/grow_from_middle_y_axis"
+
+        app:checked="false"
+        android:flipInterval="2000"
+        app:animationDuration="500"
+        app:animateDesignLayoutOnly="true">
+
+        <!-- First layout to flip -->
+        <FrameLayout
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorWhite"
+           >
+
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+                 <TextView
+                     android:id="@+id/Dose"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                     android:textSize="12sp"
+                     android:layout_alignParentLeft="true"
+                     android:layout_marginLeft="5dp"
+                     android:textColor="@color/colorGrey"
+
+
+                     />
+
+                 <TextView
+                     android:id="@+id/Price"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Price"
+                     android:textSize="12sp"
+                     android:layout_marginRight="5dp"
+                     android:textColor="@color/colorGrey"
+                     android:textStyle="bold"
+                     android:layout_centerVertical="true"
+                     android:layout_alignParentRight="true"
+
+                     />
+
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <!-- Second layout to flip -->
+        <FrameLayout
+            android:id="@+id/secondLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/lightGreen"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+
+
+                <TextView
+                    android:id="@+id/priceTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </eu.davidea.flipview.FlipView>
+
+
+</LinearLayout>

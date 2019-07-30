@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestingActivity"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/relativeMarginRight"
+        android:background="@drawable/background_spinner"
+        android:paddingRight="@dimen/relativePaddingrRight">
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+
+            android:id="@+id/userType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_alignLabels="false"
+            app:ms_arrowColor="@color/colorBlack"
+            app:ms_arrowSize="@dimen/arrowSize"
+            app:ms_enableErrorLabel="false"
+            app:ms_enableFloatingLabel="false"
+            app:ms_floatingLabelColor="#ef28d5"
+            app:ms_floatingLabelText="floating label"
+            app:ms_highlightColor="#e9cc11"
+            app:ms_hint="User types"
+            app:ms_hintColor="@color/colorBlack"
+            app:ms_multiline="false"
+            app:ms_thickness="@dimen/thickness"
+
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

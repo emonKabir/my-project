@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/intern"
+    android:background="@color/colorGrey"
+    android:visibility="gone"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_type"
+        android:textColor="@color/ericBlack"
+        android:textSize="15sp"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/medical" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dental" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/medical_colleges"
+            android:textColor="@color/ericBlack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/short_form"
+            android:textColor="@color/ericBlack"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        >
+
+        <EditText
+
+            android:id="@+id/medicalCollegeEdit"
+            style="@style/editTextProfile"
+            android:layout_weight="1"
+            android:hint="@string/medical_colleges"
+            android:paddingLeft="@dimen/edittextPaddingLeft"
+
+            />
+
+        <EditText
+
+            android:id="@+id/shortForm"
+            style="@style/editTextProfile"
+            android:layout_weight="1"
+            android:hint="@string/short_form"
+            android:paddingLeft="@dimen/edittextPaddingLeft"
+
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        >
+
+        <TextView
+            style="@style/textProfile"
+            android:text="@string/batch_no" />
+
+        <TextView
+            style="@style/textProfile"
+            android:text="@string/roll_no" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        >
+
+        <EditText
+
+            android:id="@+id/batchNo"
+            style="@style/editTextProfile"
+            android:layout_weight="1"
+            android:hint="@string/batch_no"
+            android:paddingLeft="@dimen/edittextPaddingLeft"
+
+            />
+
+        <EditText
+
+            android:id="@+id/rollNo"
+            style="@style/editTextProfile"
+            android:layout_weight="1"
+            android:hint="@string/roll_no"
+            android:paddingLeft="@dimen/edittextPaddingLeft"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        >
+
+        <TextView
+            style="@style/textProfile"
+            android:text="@string/temporary_reg_no" />
+
+        <TextView
+            android:visibility="invisible"
+            style="@style/textProfile"
+            android:text="@string/file_upload" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+
+        >
+
+        <EditText
+
+            android:id="@+id/temporaryRegNo"
+            style="@style/editTextProfile"
+            android:layout_weight="1"
+            android:hint="@string/temporary_reg_no"
+            android:paddingLeft="@dimen/edittextPaddingLeft"
+
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@color/DarkGreen"
+        android:text="@string/register"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

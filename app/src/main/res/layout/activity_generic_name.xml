@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".Pharmacologist.GenericName">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_disease_s"
+            android:drawablePadding="5dp"
+            android:text="Generic Name"
+            android:textColor="@color/blood_request_tColor"
+            android:textSize="25sp" />
+
+        <ListView
+            android:id="@+id/listviewGenericName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

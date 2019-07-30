@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Header"
+    android:orientation="vertical"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:drawableLeft="@drawable/ic_disease_s"
+           android:drawablePadding="5dp"
+           android:text="Generic Name"
+           android:textColor="@color/blood_request_tColor"
+           android:textSize="25sp" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:weightSum="3"
+           android:layout_margin="5dp"
+           >
+           <TextView
+               android:id="@+id/medicineTxtview"
+               android:layout_width="0dp"
+               android:layout_height="40dp"
+               android:text="@string/medicine"
+               android:textSize="20sp"
+               android:textColor="@color/colorWhite"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:background="@drawable/button_background"
+               />
+
+           <TextView
+               android:id="@+id/surgeryTxtview"
+               android:layout_width="0dp"
+               android:layout_height="40dp"
+               android:text="@string/surgery"
+               android:textSize="20sp"
+               android:textColor="@color/colorWhite"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:background="@drawable/button_background"
+               />
+
+           <TextView
+               android:id="@+id/gynacologyTxtview"
+               android:layout_width="0dp"
+               android:layout_height="40dp"
+               android:text="@string/gynacology"
+               android:textSize="20sp"
+               android:textColor="@color/colorWhite"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:background="@drawable/button_background"
+               />
+
+       </LinearLayout>
+       <FrameLayout
+           android:id="@+id/recentHeader"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           >
+
+       </FrameLayout>
+   </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebView.WebViewTable"
+    android:orientation="vertical"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/webView"
+            />
+        <TextView
+            android:id="@+id/revisedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="REVISED BY:"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/doctorName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="doctor name"
+            android:textColor="#66c8d9"
+            android:textSize="18sp"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/investigation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INVESTIGATION"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:id="@+id/advice2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADVICE"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+
+            />
+        <TextView
+            android:id="@+id/sign2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:id="@+id/symptom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SYMPTOM"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/onExamination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ON EXAMINATION"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOTE"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:id="@+id/reference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REFERENCE"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+
+            />
+        <TextView
+            android:id="@+id/addNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD NOTE"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+
+            />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+</LinearLayout>

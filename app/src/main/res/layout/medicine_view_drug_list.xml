@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/pills"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/ic_drugs"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/mTradeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TradeName"
+            android:layout_toRightOf="@+id/pills"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/ericBlack"
+            />
+        <TextView
+            android:id="@+id/mGenericType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="genericType"
+            android:layout_toRightOf="@+id/TradeName"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/ericBlack"
+
+
+            />
+        <TextView
+            android:id="@+id/mCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="company name"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/TradeName"
+            android:layout_toRightOf="@+id/pills"
+            android:textSize="15sp"
+            android:textColor="@color/colorGreen"
+            />
+
+        <TextView
+            android:id="@+id/mGenericName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="genericName"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/companyName"
+            android:layout_toRightOf="@+id/pills"
+            android:textSize="15sp"
+            android:textColor="@color/ericBlack"
+            />
+
+
+
+        <TextView
+            android:id="@+id/mDose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pills"
+            android:text="Dose"
+            android:textSize="15sp"
+            android:layout_below="@+id/genericName"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorGrey"
+
+
+            />
+
+        <TextView
+            android:id="@+id/mPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="15sp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/colorGrey"
+            android:textStyle="bold"
+            android:layout_below="@+id/genericName"
+            android:layout_alignParentRight="true"
+
+            />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id = "@+id/drugName"
+        android:text = "Drug Name"
+        style="@style/listview_textview"
+        android:singleLine="false"
+       />
+    <TextView
+        android:id = "@+id/dose"
+        android:layout_toRightOf="@+id/drugName"
+        android:text = "Dose"
+        style="@style/listview_textview"
+        />
+
+    <TextView
+        android:id = "@+id/dQuantity"
+        android:layout_toRightOf="@+id/dose"
+        style="@style/listview_textview"
+        android:text = "@string/increased"
+
+
+        />
+
+    <!--<TextView-->
+    <!--android:id = "@+id/star"-->
+    <!--style="@style/listview_textview"-->
+    <!--android:text = "*"-->
+    <!--android:layout_weight="1"-->
+    <!--/>-->
+
+
+    <TextView
+        android:id = "@+id/dPrice"
+        style="@style/listview_textview"
+        android:layout_toRightOf="@+id/dQuantity"
+        android:text = "price"
+
+        />
+    <TextView
+        android:id = "@+id/equal"
+        android:layout_toRightOf="@+id/dPrice"
+        style="@style/listview_textview"
+        android:text = "="
+
+        />
+    <TextView
+
+        android:id = "@+id/total"
+        android:layout_toRightOf="@+id/equal"
+        style="@style/listview_textview"
+        android:text = "total"
+
+        />
+
+    <TextView
+        android:id="@+id/currency"
+        style="@style/listview_textview"
+        android:layout_toRightOf="@+id/total"
+        android:text="BDT"
+
+
+        />
+    <TextView
+        android:id = "@+id/cross"
+        style="@style/listview_textview"
+        android:drawableRight="@drawable/ic_clear_black_24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+
+
+    <!--<LinearLayout-->
+        <!--android:id = "@+id/relativeLayout1"-->
+        <!--android:layout_width = "match_parent"-->
+        <!--android:layout_height = "wrap_content"-->
+        <!--android:background = "@color/colorWhite" >-->
+
+        <!--<TextView-->
+            <!--android:id = "@+id/drugName"-->
+            <!--android:text = "Drug Name"-->
+            <!--style="@style/listview_textview"-->
+            <!--android:layout_weight=".5"-->
+
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id = "@+id/dose"-->
+            <!--android:text = "Dose"-->
+            <!--style="@style/listview_textview"-->
+            <!--android:layout_weight=".8"-->
+
+
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id = "@+id/dQuantity"-->
+            <!--style="@style/listview_textview"-->
+            <!--android:text = "@string/increased"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="right"-->
+            <!--/>-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id = "@+id/star"&ndash;&gt;-->
+            <!--&lt;!&ndash;style="@style/listview_textview"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text = "*"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+
+        <!--<TextView-->
+            <!--android:id = "@+id/dPrice"-->
+            <!--style="@style/listview_textview"-->
+            <!--android:text = "price"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="left"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id = "@+id/equal"-->
+            <!--style="@style/listview_textview"-->
+            <!--android:text = "="-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="left"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id = "@+id/total"-->
+            <!--style="@style/listview_textview"-->
+            <!--android:text = "total"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="left"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id = "@+id/currency"-->
+            <!--style="@style/listview_textview"-->
+            <!--android:text = "BDT"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="left"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

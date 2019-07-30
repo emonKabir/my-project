@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "552325252203",
+    "firebase_url": "https://bdmedic-806ad.firebaseio.com",
+    "project_id": "bdmedic-806ad",
+    "storage_bucket": "bdmedic-806ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552325252203:android:83fb457e53eb95eb",
+        "android_client_info": {
+          "package_name": "com.example.emon.bdmedic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552325252203-nrhn8rkppr48clqueo2bvfgvlu0f5g4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.emon.bdmedic",
+            "certificate_hash": "8dd4cc680a5bceed64813744dcb4aafe44bb020d"
+          }
+        },
+        {
+          "client_id": "552325252203-0booeubto3rm4k8g85kt10djasp4j2nb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpkB8D0w9sPwcaHHczz15z-8RvvRFhOTA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552325252203-0booeubto3rm4k8g85kt10djasp4j2nb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

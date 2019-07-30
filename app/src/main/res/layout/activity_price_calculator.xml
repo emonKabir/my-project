@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PriceCalculator.PriceCalculator"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/linear"
+    >
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+ <!--   <TextView
+        android:id="@+id/bloodRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_006_calculator"
+        android:drawablePadding="@dimen/blood_request_dPadding"
+        android:text="@string/drug_price_calculator"
+        android:textColor="@color/blood_request_tColor"
+        android:textSize="@dimen/blood_request_tSize"
+        android:layout_marginTop="10dp"
+
+
+        />-->
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        android:padding="10dp"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/autoComplete"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:layout_weight="1.3"
+                android:layout_marginLeft="5dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/relativeMarginRight"
+                android:layout_weight=".7"
+                android:background="@drawable/blood_request_spinner_background"
+                android:paddingRight="@dimen/relativePaddingrRight">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+
+                    android:id="@+id/doseSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/colorBlack"
+                    app:ms_arrowSize="@dimen/arrowSize"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_floatingLabelColor="#ef28d5"
+                    app:ms_floatingLabelText="floating label"
+                    app:ms_highlightColor="#e9cc11"
+                    app:ms_hint="Dose"
+                    app:ms_hintColor="@color/colorBlack"
+                    app:ms_multiline="false"
+                    app:ms_thickness="@dimen/thickness"
+
+
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/relativeMarginRight"
+                android:layout_weight="1"
+                android:background="@drawable/blood_request_spinner_background"
+                android:paddingRight="@dimen/relativePaddingrRight">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+
+
+                    android:id="@+id/priceSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/colorBlack"
+                    app:ms_arrowSize="@dimen/arrowSize"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_floatingLabelColor="#ef28d5"
+                    app:ms_floatingLabelText="floating label"
+                    app:ms_highlightColor="#e9cc11"
+                    app:ms_hint="Price"
+                    app:ms_hintColor="@color/colorBlack"
+                    app:ms_multiline="false"
+                    app:ms_thickness="@dimen/thickness"
+
+
+                    />
+
+            </RelativeLayout>
+
+
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittextheight"
+                android:background="@drawable/blood_request_spinner_background"
+                android:hint="Quantity"
+                android:textColorHint="@color/colorBlack"
+                android:paddingLeft="@dimen/edittextPaddingLeft"
+                android:inputType="phone"
+                android:digits="0123456789"
+                />
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/addDrug"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="@dimen/loginHeight"
+            android:background="@drawable/button_background"
+            android:gravity="center_horizontal|center"
+            android:text="@string/add_drug"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/loginTextsize"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:weightSum="2"
+
+
+        >
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:weightSum="4"
+            >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/discount"
+                android:textSize="12sp"
+                android:textColor="@color/laboratoryListviewColor"
+                android:paddingLeft="5dp"
+
+                />
+
+            <EditText
+                android:id="@+id/discountBdt"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:hint="@string/bdt"
+
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textSize="12sp"
+                android:textColor="@color/laboratoryListviewColor"
+                android:paddingLeft="5dp"
+
+                />
+            <EditText
+                android:id="@+id/discountPercentage"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="%"
+                android:inputType="phone"
+                android:digits="0123456789"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price"
+                android:textSize="12sp"
+                android:textColor="@color/laboratoryListviewColor"
+                android:paddingLeft="5dp"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalPrice"
+                android:text="@string/zero"
+                android:textSize="15sp"
+                android:textColor="@color/borderColor"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="2"
+
+
+        >
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:weightSum="4"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/discount"
+                android:textSize="12sp"
+                android:textColor="@color/laboratoryListviewColor"
+                android:paddingLeft="5dp"
+
+                />
+
+            <EditText
+
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:hint="@string/bdt"
+
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textSize="12sp"
+                android:textColor="@color/laboratoryListviewColor"
+                android:paddingLeft="5dp"
+
+                />
+            <EditText
+
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="%"
+                android:inputType="phone"
+                android:digits="0123456789"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/totalPrice"
+                android:textSize="12sp"
+                android:textColor="@color/laboratoryListviewColor"
+                android:paddingLeft="5dp"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/grandTotal"
+                android:text="@string/zero"
+                android:textSize="15sp"
+                android:textColor="@color/borderColor"
+                android:layout_marginRight="12dp"
+                android:gravity="right"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/drug_list"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/laboratoryListviewColor"
+            android:paddingLeft="5dp"
+            />
+
+        <ListView
+            android:id="@+id/listviewPriceCalculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/laboratoryListviewColor"
+            android:dividerHeight="0.5sp"
+            android:stackFromBottom="true"
+            android:transcriptMode="normal"
+            >
+
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

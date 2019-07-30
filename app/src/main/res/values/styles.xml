@@ -1,0 +1,204 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="editText">
+
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/edittext</item>
+
+    </style>
+
+    <style name="editTextProfile">
+
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">0dp</item>
+      <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/edittext</item>
+
+    </style>
+    <style name="textProfile">
+
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/ericBlack</item>
+
+    </style>
+    <style name="editTextInRegister">
+
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="android:background">@drawable/edittext</item>
+
+    </style>
+
+    <style name="diseaseListText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/diseaseListTextSize</item>
+        <item name="android:layout_marginLeft">@dimen/diseaseListTextMargin</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:layout_marginTop">@dimen/diseaseListTextMargin</item>
+
+
+    </style>
+
+    <style name="menuTextView">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/menuTextviewMarginTop</item>
+        <item name="android:textSize">@dimen/menuTexttxtSize</item>
+
+
+    </style>
+
+    <style name="menuTextView2">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/menuTextviewMarginTop</item>
+        <item name="android:textSize">@dimen/menuTexttxtSize</item>
+        <item name="android:paddingRight">5dp</item>
+
+
+    </style>
+
+    <style name="menuFabButton">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+
+    </style>
+
+    <style name="alignmentLeft">
+
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="dividerBase">
+        <item name="android:background">?android:attr/listDivider</item>
+        //you can give your color here. that will change all divider color in your app.
+    </style>
+
+    <style name="dividerHorizontal" parent="dividerBase">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        // You can change thickness here.
+
+    </style>
+
+    <style name="dividerVertical" parent="dividerBase">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="listview_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_margin">5dp</item>
+        <!--<item name="android:layout_weight">1</item>-->
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">10sp</item>
+        <!--<item name="android:padding">5dp</item>-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:singleLine">true</item>-->
+
+    </style>
+    <!--    <style name="homePageModule">
+       &lt;!&ndash; <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:layout_marginBottom">25dp</item>&ndash;&gt;
+        &lt;!&ndash;<item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>&ndash;&gt;
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+       &lt;!&ndash; <item name="android:padding">15dp</item>&ndash;&gt;
+        <item name="android:background">@drawable/circle_shape</item>
+
+    </style>-->
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+
+    </style>
+
+    <style name="DialogAnimationForPriceButton">
+        <item name="android:windowEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_left</item>
+
+    </style>
+
+    <style name="favButton" parent="Widget.Design.FloatingActionButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <!--<item name="android:layout_weight">1</item>-->
+        <!--<item name="android:layout_margin">10dp</item>-->
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <!--<item name="fabCu">right</item>-->
+
+        <item name="maxImageSize">40dp</item>
+        <item name="backgroundTint">@color/actionbarColor</item>
+
+        <item name="elevation">8dp</item>
+
+
+    </style>
+
+    <style name="SplashTheme" parent ="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splas_screen</item>
+    </style>
+    <style name="fabButtonLayout">
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+<!--    <style name="MyCustomTheme" parent="MaterialSearchBarLight">
+        <item name="mt_searchBarColor">@color/searchBarPrimaryColor</item>
+        <item name="mt_dividerColor">@color/searchBarDividerColor</item>
+        <item name="mt_navIconTint">@color/searchBarNavIconTintColor</item>
+        <item name="mt_searchIconTint">@color/searchBarSearchIconTintColor</item>
+        <item name="mt_clearIconTint">@color/searchBarClearIconTintColor</item>
+        <item name="mt_menuIconTint">@color/searchBarMenuIconTintColor</item>
+        <item name="mt_backIconTint">@color/searchBarBackIconTintColor</item>
+        <item name="mt_textCursorTint">@color/searchBarCursorColor</item>
+        <item name="mt_textColor">@color/searchBarTextColor</item>
+        <item name="mt_hintColor">@color/searchBarHintColor</item>
+        <item name="mt_placeholderColor">@color/searchBarPlaceholderColor</item>
+        <item name="mt_highlightedTextColor">@color/searchBarTextHighlightColor</item>
+    </style>-->
+
+   <!-- <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>-->
+
+    <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+</resources>

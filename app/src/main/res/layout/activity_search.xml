@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search.SearchActivity"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+       <!-- <com.mancj.materialsearchbar.MaterialSearchBar
+
+            android:layout_weight=".2"
+
+            style="@style/MaterialSearchBarLight"
+            app:mt_hint="Search here..."
+            app:mt_searchBarColor="@color/colorgrey"
+            app:mt_hintColor="@color/colorWhite"
+            app:mt_maxSuggestionsCount="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchBar"
+            app:mt_searchIconDrawable ="@drawable/ic_search_black_24dp"
+            app:mt_clearIconDrawable = "@drawable/ic_action_name"
+
+            />-->
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            app:iconifiedByDefault="false"
+            app:queryHint="@string/search_here"
+            app:defaultQueryHint="@string/search_here"
+            />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:background="@drawable/background_spinner"
+            android:paddingLeft="5dp"
+
+
+            >
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+
+
+                android:id="@+id/selectSearchItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/colorBlack"
+                app:ms_arrowSize="@dimen/arrowSize"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="false"
+                app:ms_floatingLabelText="floating label"
+                app:ms_hint="Category"
+                app:ms_hintColor="@color/colorBlack"
+                app:ms_multiline="false"
+                app:ms_thickness="@dimen/thickness"
+
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:id="@+id/listviewSearchMedic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorWhite"
+        android:dividerHeight="3.0sp"
+
+        />
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:id="@+id/listviewSearchDisease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorWhite"
+        android:dividerHeight="3.0sp"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="backgroundOpacityColor">#CC05a16f</color>
+    <color name="trueColor">#e1e110</color>
+    <color name="menuFabBackgroundTint">#02b095</color>
+    <color name="actionbarColor">#02b095</color>
+    <color name="blood_request_tColor">#016253</color>
+
+    <color name="colorCell">#50d92d</color>
+    <color name="laboratoryListviewColor">#FF33CFC0</color>
+    <color name="borderColor">#01c851</color>
+    <color name="colorgrey">#d2d2d2</color>
+    <color name="colorGrey">#D3D3D3</color>
+    <color name="ericBlack">#1b1b1b</color>
+    <color name="colorGreen">#006a5d</color>
+    <color name="offWhite">#d2d2d2</color>
+    <color name="lightGreen">#90ee90</color>
+    <color name="DarkGreen">#03C03C</color>
+    <color name="Red">#DC143C</color>
+    <color name="DarkRed">#FF0000</color>
+    <color name="listTxtColor">#737373</color>
+    <color name="doctorColor">#5dbcd2</color>
+    <color name="white">#ffffff</color>
+    <color name="backgroundColor">#CC05a16f</color>
+    <color name="fjdkjfl">#8bf0ba</color>
+
+</resources>

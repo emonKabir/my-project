@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/fragmentM_bottom"
+    android:layout_marginTop="@dimen/fragmentM_top"
+    tools:context=".MenuFeed"
+    android:id="@+id/main_menu"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        >
+
+
+      <!--  <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circleProgressBar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cpb_background_progressbar_color="#FFCDD2"
+            app:cpb_background_progressbar_width="5dp"
+            app:cpb_progressbar_color="#F44336"
+            app:cpb_progressbar_width="5dp"
+            android:layout_margin="20dp"
+            app:cpb_indeterminate_mode="true"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/hideLayout"
+
+
+
+            >
+
+           <!-- <com.mancj.materialsearchbar.MaterialSearchBar
+
+                android:layout_marginTop="20dp"
+                style="@style/MaterialSearchBarLight"
+                app:mt_hint="Search here..."
+                app:mt_searchBarColor="@color/colorgrey"
+                app:mt_hintColor="@color/colorWhite"
+                app:mt_maxSuggestionsCount="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchBar"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:focusable="true"
+               app:mt_searchIconDrawable ="@drawable/ic_search_black_24dp"
+               app:mt_clearIconDrawable = "@drawable/ic_action_name"
+
+
+                />-->
+
+            <TextView
+                android:id="@+id/searchBtn"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+
+                android:background="@drawable/search_background"
+                android:drawableRight="@drawable/ic_search_black_24dp"
+                android:text="@string/search_here"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+
+
+                    >
+                    <LinearLayout
+
+                        style="@style/fabButtonLayout"
+
+                        >
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/commonTreatment"
+                            style="@style/favButton"
+                            app:srcCompat="@drawable/common_treatment"
+                            android:layout_gravity="center_vertical"
+                            app:fabCustomSize="100dp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        style="@style/fabButtonLayout"
+
+                        >
+                        <android.support.design.widget.FloatingActionButton
+
+                            android:id="@+id/laboratoryValues"
+                            style="@style/favButton"
+                            app:srcCompat="@drawable/laboratry"
+                            android:layout_gravity="center_vertical"
+                            app:fabCustomSize="100dp"
+
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+
+                        style="@style/fabButtonLayout"
+
+                        >
+                        <android.support.design.widget.FloatingActionButton
+
+                            android:id="@+id/pharmacy"
+                            style="@style/favButton"
+                            app:srcCompat="@drawable/pharmacy"
+                            android:layout_gravity="center_vertical"
+                            app:fabCustomSize="100dp"
+
+                            />
+
+                    </LinearLayout>
+                 <!--   <android.support.design.widget.FloatingActionButton
+
+                        android:id="@+id/laboratoryValues"
+
+                        app:fabCustomSize="120dp"
+                        style="@style/favButton"
+                        android:src="@drawable/sciencee"
+
+
+                        />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/pharmacy"
+                        style="@style/favButton"
+                        android:src="@drawable/pharmacy"
+                        app:fabCustomSize="120dp"
+
+                        />-->
+                    <!-- <ImageView
+                        android:id="@+id/laboratoryValues"
+                        style="@style/homePageModule"
+                        app:srcCompat = "@drawable/sciencee"
+                        android:padding="20dp"
+                        android:layout_gravity="center"
+
+
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/pharmacy"
+                        style="@style/homePageModule"
+                        android:layout_gravity="center"
+
+                        />-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight=".0"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/common_treatment"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/laboratory_values"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/pharmacy"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+
+
+                    >
+
+
+                    <!-- <ImageView
+                        android:id="@+id/commonTreatment"
+                        style="@style/homePageModule"
+                        android:layout_gravity="center"
+
+
+                        />-->
+
+                    <LinearLayout
+
+                        style="@style/fabButtonLayout"
+
+                        >
+                        <android.support.design.widget.FloatingActionButton
+
+                            android:id="@+id/bloodRequest"
+                            style="@style/favButton"
+                            app:srcCompat="@drawable/blood"
+                            android:layout_gravity="center_vertical"
+                            app:fabCustomSize="100dp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        style="@style/fabButtonLayout"
+
+                        >
+                        <android.support.design.widget.FloatingActionButton
+
+                            android:id="@+id/awarness"
+                            style="@style/favButton"
+                            app:srcCompat="@drawable/awarness"
+                            android:layout_gravity="center_vertical"
+                            app:fabCustomSize="100dp"
+
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+
+                        style="@style/fabButtonLayout"
+
+                        >
+                        <android.support.design.widget.FloatingActionButton
+
+                            android:id="@+id/priceCalculator"
+                            style="@style/favButton"
+                            app:srcCompat="@drawable/calculator"
+                            android:layout_gravity="center_vertical"
+                            app:fabCustomSize="100dp"
+
+                            />
+
+                    </LinearLayout>
+                    <!--   <android.support.design.widget.FloatingActionButton
+
+                           android:id="@+id/laboratoryValues"
+
+                           app:fabCustomSize="120dp"
+                           style="@style/favButton"
+                           android:src="@drawable/sciencee"
+
+
+                           />
+
+                       <android.support.design.widget.FloatingActionButton
+                           android:id="@+id/pharmacy"
+                           style="@style/favButton"
+                           android:src="@drawable/pharmacy"
+                           app:fabCustomSize="120dp"
+
+                           />-->
+                    <!-- <ImageView
+                        android:id="@+id/laboratoryValues"
+                        style="@style/homePageModule"
+                        app:srcCompat = "@drawable/sciencee"
+                        android:padding="20dp"
+                        android:layout_gravity="center"
+
+
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/pharmacy"
+                        style="@style/homePageModule"
+                        android:layout_gravity="center"
+
+                        />-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight=".0"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/blood_request"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/awareness"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/price_calculator"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:layout_weight="1"
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/lastLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="3"
+                        >
+
+
+
+
+                        <LinearLayout
+
+                            style="@style/fabButtonLayout"
+
+                            >
+                            <android.support.design.widget.FloatingActionButton
+
+                                android:id="@+id/medicine"
+                                style="@style/favButton"
+                                app:srcCompat="@drawable/medicine"
+                                android:layout_gravity="center_vertical"
+                                app:fabCustomSize="100dp"
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            style="@style/fabButtonLayout"
+                            >
+                            <android.support.design.widget.FloatingActionButton
+
+                                android:id="@+id/surgery"
+                                style="@style/favButton"
+                                app:srcCompat="@drawable/surgery"
+                                android:layout_gravity="center_vertical"
+                                app:fabCustomSize="100dp"
+
+                                />
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+
+                            style="@style/fabButtonLayout"
+                            >
+                            <android.support.design.widget.FloatingActionButton
+
+                                android:id="@+id/gyneAndObs"
+                                style="@style/favButton"
+                                app:srcCompat="@drawable/gynecologist"
+                                app:fabCustomSize="100dp"
+
+                                />
+
+                        </LinearLayout>
+                        <!--   <android.support.design.widget.FloatingActionButton
+
+                               android:id="@+id/laboratoryValues"
+
+                               app:fabCustomSize="120dp"
+                               style="@style/favButton"
+                               android:src="@drawable/sciencee"
+
+
+                               />
+
+                           <android.support.design.widget.FloatingActionButton
+                               android:id="@+id/pharmacy"
+                               style="@style/favButton"
+                               android:src="@drawable/pharmacy"
+                               app:fabCustomSize="120dp"
+
+                               />-->
+                        <!-- <ImageView
+                            android:id="@+id/laboratoryValues"
+                            style="@style/homePageModule"
+                            app:srcCompat = "@drawable/sciencee"
+                            android:padding="20dp"
+                            android:layout_gravity="center"
+
+
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/pharmacy"
+                            style="@style/homePageModule"
+                            android:layout_gravity="center"
+
+                            />-->
+
+
+                    </LinearLayout>
+                   <!-- <View
+                        android:id="@+id/overlapView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha=".3"
+                        android:background="@color/colorGrey"
+
+                        >
+                    </View>-->
+                    <TextView
+                        android:id="@+id/overlapView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorGrey"
+                        android:alpha=".8"
+                        android:text="@string/this_section_only_for_doctor_to_complete_your_profile_click_here"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:textColor="@color/ericBlack"
+                        android:drawableLeft="@drawable/ic_lock_black_24dp"
+
+
+
+                        />
+                </FrameLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight=".0"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/medicine"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/surgery"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/gynacology"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+      <!--  <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circleProgressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:cpb_background_progressbar_color="#FFCDD2"
+            app:cpb_background_progressbar_width="5dp"
+            app:cpb_progressbar_color="#F44336"
+            app:cpb_progressbar_width="5dp"
+            android:layout_margin="20dp"
+            app:cpb_indeterminate_mode="true"
+            />
+-->
+       <!-- <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:background="@color/colorGrey"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+
+            />-->
+        <TextView
+            android:gravity="center_horizontal|center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/data_loading_please_wait"
+            android:textSize="20sp"
+            android:textColor="@color/colorGrey"
+
+            />
+
+    </LinearLayout>
+</FrameLayout>

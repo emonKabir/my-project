@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.DoctorProfile"
+    android:orientation="vertical"
+    >
+
+    <include android:id="@+id/tool_bar" layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    app:cardElevation="15dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_weight=".7"
+                    android:background="@color/colorGrey"
+                    >
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/profile_image"
+
+                        />
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="15dp"
+                    android:layout_weight="1.3"
+                    app:cardCornerRadius="3dp"
+                    android:layout_marginLeft="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/dName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="example"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/ericBlack"
+                            />
+
+
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/bmdcRegNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bmdc_reg_no"
+                            android:textSize="@dimen/fifteenSp"
+
+                            android:textColor="@color/ericBlack"
+                            />
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/college"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/medical_colleges"
+                            android:textSize="@dimen/fifteenSp"
+
+                            android:textColor="@color/ericBlack"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="#5dbcd2"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+
+                        android:id="@+id/academic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/designation_and_academic_status"
+                        android:textSize="15sp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/designationTag"
+                        android:textSize="@dimen/fifteenSp"
+                        android:textStyle="bold"
+                        android:textColor="@color/ericBlack"
+                        android:paddingLeft="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/dDesignation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/designationTag"
+                        android:textSize="@dimen/fifteenSp"
+                        android:textColor="@color/colorWhite"
+                        android:paddingLeft="10dp"
+
+
+                        />
+
+                    <TextView
+
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/academic_status"
+                        android:textSize="@dimen/fifteenSp"
+                        android:textStyle="bold"
+                        android:textColor="@color/ericBlack"
+                        android:paddingLeft="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/academicStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/designationTag"
+                        android:textSize="@dimen/fifteenSp"
+                        android:textColor="@color/white"
+                        android:paddingLeft="10dp"/>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="#5dbcd2"
+                android:layout_margin="10dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/speciality__"
+                        android:textSize="15sp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+
+                        android:id="@+id/speciality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="@string/speciality__"
+                        android:textColor="@color/white"
+                        android:paddingLeft="10dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/doctorColor"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chamber"
+                        android:textSize="15sp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chamber_open"
+                        android:textSize="@dimen/fifteenSp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/ericBlack"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+
+
+                        android:id="@+id/chamberOpen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chamber_open"
+                        android:textSize="@dimen/fifteenSp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white"
+
+                        />
+
+                    <TextView
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chamber_address"
+                        android:textSize="@dimen/fifteenSp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/ericBlack"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+
+
+                        android:id="@+id/chamberAddressDoctor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chamber_address"
+                        android:textSize="@dimen/fifteenSp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white"
+
+                        />
+
+                    <TextView
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact"
+                        android:textSize="@dimen/fifteenSp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/ericBlack"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+
+
+                        android:id="@+id/contactDoctor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact"
+                        android:textSize="@dimen/fifteenSp"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white"
+
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

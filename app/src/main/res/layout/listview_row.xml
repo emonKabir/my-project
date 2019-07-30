@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id = "@+id/relativeLayout1"
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:background = "@color/colorWhite" >
+
+        <TextView
+            android:id = "@+id/name"
+            android:text = "@string/name"
+            style="@style/listview_textview"/>
+
+        <TextView
+            android:id = "@+id/normal_finding"
+            android:text = "@string/normal_finding"
+            style="@style/listview_textview"
+
+            />
+
+        <TextView
+            android:id = "@+id/increased"
+            style="@style/listview_textview"
+            android:text = "@string/increased"
+            />
+
+        <TextView
+            android:id = "@+id/decreased"
+            style="@style/listview_textview"
+            android:text = "@string/decreased"
+            />
+
+        <TextView
+            android:id = "@+id/others"
+            style="@style/listview_textview"
+            android:text = "@string/others"
+             />
+    </LinearLayout>
+</RelativeLayout>

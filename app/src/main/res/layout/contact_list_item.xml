@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_user"
+        android:layout_marginLeft="5dp"
+
+        />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/contactTxtSize"
+        android:text="Name"
+        android:textColor="@color/colorBlack"
+        android:layout_toRightOf="@+id/userIcon"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <TextView
+
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="number"
+        android:textSize="@dimen/contactTxtSize"
+        android:textColor="@color/colorgrey"
+        android:layout_below="@+id/contact_name"
+        android:layout_toRightOf="@+id/userIcon"
+        android:layout_marginLeft="10dp"
+
+        />
+    <TextView
+
+        android:id="@+id/textview_blood_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="number"
+        android:textSize="@dimen/contactTxtSize"
+        android:textColor="@color/Red"
+       android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+
+        />
+   <!-- <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+
+            >
+
+            <ImageView
+                android:id="@+id/userIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_user"
+                android:layout_marginLeft="5dp"
+
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/textview_android_contact_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/contactTxtSize"
+                android:text="Name"
+                android:textColor="@color/colorBlack"
+                android:layout_toRightOf="@+id/userIcon"
+                android:layout_marginLeft="10dp"
+
+                />
+
+            <TextView
+
+                android:id="@+id/textview_android_contact_phoneNr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="number"
+                android:textSize="@dimen/contactTxtSize"
+                android:textColor="@color/colorgrey"
+                android:layout_below="@+id/textview_android_contact_name"
+                android:layout_toRightOf="@+id/userIcon"
+                android:layout_marginLeft="10dp"
+
+                />
+
+
+
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/half_circle">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_favorite_border_black_24dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"/>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>-->
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

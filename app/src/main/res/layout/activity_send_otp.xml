@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpicture"
+    tools:context=".SendOTP"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bb00B195"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        >
+
+        <EditText
+
+            android:id="@+id/name"
+            style="@style/editText"
+            android:hint="Enter your name"
+            android:paddingLeft="@dimen/edittextPaddingLeft"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+        <EditText
+
+            android:id="@+id/email"
+            style="@style/editText"
+            android:hint="enter your email"
+            android:paddingLeft="@dimen/edittextPaddingLeft"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+
+        <EditText
+
+            android:id="@+id/mobileNumber"
+            style="@style/editText"
+            android:hint="@string/mobile_number"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/edittextPaddingLeft"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+        <EditText
+
+
+            android:id="@+id/OTP"
+            style="@style/editText"
+            android:layout_below="@+id/mobileNumber"
+            android:hint="Give OTP"
+            android:paddingLeft="@dimen/edittextPaddingLeft"
+            android:visibility="invisible"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+
+            />
+
+        <TextView
+
+
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/loginHeight"
+            android:layout_below="@+id/sendSMS"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/loginMarginTop"
+            android:gravity="center"
+            android:text="userMessage"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/loginTextsize"
+            android:visibility="invisible"
+
+            />
+
+        <TextView
+
+
+            android:id="@+id/sendSMS"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/loginHeight"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/loginMarginTop"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Send SMS"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/loginTextsize"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp"
+    >
+    <ImageView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat = "@drawable/ic_format_quote_black_24dp"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+         />
+<TextView
+    android:id="@+id/firstTextview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textSize="@dimen/fourteenSp"
+    android:textStyle="bold"
+    android:layout_toEndOf="@+id/quote"
+    android:layout_toRightOf="@+id/quote"
+
+    />
+
+    <TextView
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:id="@+id/secondTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/ericBlack"
+        android:textSize="@dimen/fourteenSp"
+        android:textStyle="bold"
+       android:layout_toRightOf="@+id/firstTextview"
+        />
+    <TextView
+        android:id="@+id/thirdTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="@dimen/fourteenSp"
+        android:layout_toRightOf="@+id/secondTextview"
+        />
+</RelativeLayout>

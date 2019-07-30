@@ -1,0 +1,160 @@
+<resources>
+    <string name="app_name">BdMedic</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="log_in">Log in</string>
+    <string name="full_name">Full Name</string>
+    <string name="present_address">Present Address</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="Upazila">Upazila</string>
+    <string name="district">District</string>
+    <string name="bloodGroup">Blood Group</string>
+    <string name="sex">Sex</string>
+    <string name="sign_in">Sign in</string>
+    <string name="FCM_PREF">com.example.emon.bdmedic.fcm_pref</string>
+    <string name="FCM_TOKEN">com.example.emon.bdmedic.fcm_token</string>
+    <array name="sex">
+
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <array name="BloodGroup">
+
+        <item>o+</item>
+        <item>o-</item>
+        <item>A+</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="title_activity_bottom_menu">BottomMenu</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="account">Account</string>
+    <string name="contact">Contact :</string>
+    <string name="awareness">Awareness</string>
+    <string name="blood_request">Blood Request</string>
+    <string name="send">Send</string>
+    <string name="send_to">Send To</string>
+    <string name="sort_by">Sort By</string>
+    <string name="common_treatment">Common Treatment</string>
+    <string name="price_calculator">Price Calculator</string>
+
+    <string name="name">name</string>
+    <string name="normal_finding">Normal Finding</string>
+    <string name="increased">increased</string>
+    <string name="decreased">decreased</string>
+    <string name="others">others</string>
+    <string name="add_drug">Add Drug</string>
+    <string name="drug_list">Drug List</string>
+    <string name="drug_price_calculator">Drug Price Calculator</string>
+    <string name="totalPrice">Total Price</string>
+    <string name="zero">0</string>
+    <string name="system">System</string>
+    <string name="laboratory_values">Laboratory values</string>
+    <string name="medicine">Medicine</string>
+    <string name="surgery">Surgery</string>
+    <string name="gynacology">Gynacology</string>
+    <string name="pharmacy">Pharmacy</string>
+    <string name="data_loading_please_wait">Data loading.please do not close your app..!!!</string>
+    <string name="Others">Others</string>
+    <string name="show">Show</string>
+    <string name="actions">Actions</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="enter_verification_code">Enter verification code</string>
+    <string name="verify">Verify</string>
+    <string name="discount">discount</string>
+    <string name="bdt">BDT</string>
+    <string name="or">or</string>
+    <string name="generic_name">Generic Name</string>
+    <string name="pharmacology">Pharmacology</string>
+    <string name="disease">Disease</string>
+    <string name="indication">Indication</string>
+    <string name="dosagesgs">Dosagesgs</string>
+    <string name="dosages_according_to_indication_adult">Dosages according to indication(Adult)</string>
+    <string name="dosages_according_to_indication_child">Dosages according to indication(Child)</string>
+    <string name="renal_hepatic_impairment_dose"><![CDATA[Renal &amp; Hepatic Impairment Dose]]></string>
+    <string name="adverse_reaction">Adverse Reaction</string>
+    <string name="drug_interaction">Drug Interaction</string>
+    <string name="food_interaction">Food Interaction</string>
+    <string name="precaution">Precaution</string>
+    <string name="mechanism_of_action">Mechanism of Action</string>
+    <string name="pregnancy_amp_lactation"><![CDATA[Pregnancy &amp; lactation]]></string>
+    <string name="action">Action</string>
+    <string name="userMessage">data updating.please wait!!!</string>
+    <string name="investigation">INVESTIGATION</string>
+    <string name="advice">ADVICE</string>
+    <string name="sign">SIGN</string>
+    <string name="symptom">SYMPTOM</string>
+    <string name="on_examination">ON EXAMINATION</string>
+    <string name="note">NOTE</string>
+    <string name="reference">REFERENCE</string>
+    <string name="revised_by">REVISED BY:</string>
+    <string name="redColor">#FF0000</string>
+    <string name="hospital">Hospital</string>
+    <string name="address">Address</string>
+    <string name="title_activity_account">Account</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="medical">Medical</string>
+    <string name="dental">Dental</string>
+    <string name="registration_type">Registration Type</string>
+    <string name="medical_colleges">Medical Colleges</string>
+    <string name="short_form">Short Form</string>
+    <string name="roll_no">Roll No.</string>
+    <string name="batch_no">Batch No.</string>
+    <string name="bmdc_reg_no">BMDC Reg No.</string>
+    <string name="file_upload">File Upload</string>
+    <string name="designation">Designation</string>
+
+    <string name="academic_career">Academic Career</string>
+    <string name="post_graduation">Post Graduation</string>
+
+    <string name="medical_student">Medical student</string>
+    <string name="chamber_location">Chamber Location</string>
+    <string name="contact_for_serial">Contact For serial</string>
+    <string name="saturday">Saturday</string>
+    <string name="min">Min</string>
+    <string name="hour">Hour</string>
+    <string name="am_pm">AM/PM</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="friday">Friday</string>
+    <string name="temporary_reg_no">Temporary Reg No.</string>
+    <string name="register">Register</string>
+    <string name="drawer_item_settings">testing</string>
+    <string name="drawer_item_home">Profile</string>
+    <string name="share">Share</string>
+    <string name="rate_the_app">Rate the App</string>
+    <string name="this_section_only_for_doctor_to_complete_your_profile_click_here">This section only for doctor.To complete your profile.click here!!!</string>
+    <string name="designation_and_academic_status">Designation and Academic Status</string>
+    <string name="welcome_to_bdmedic">Welcome to BDMedic</string>
+    <string name="price">Price</string>
+
+    <string name="designationTag">Designation :</string>
+    <string name="academic_status">Academic Status :</string>
+
+    <string name="chamber">Chamber</string>
+    <string name="chamber_open">Chamber Open :</string>
+    <string name="chamber_address">Chamber Address :</string>
+    <string name="contactPerson">Contact : </string>
+    <string name="speciality__">Speciality</string>
+    <string name="doctor_name">Doctor Name</string>
+    <string name="bdmedic_s">BDMedics</string>
+    <string name="sponsored_by">Sponsored by Square</string>
+    <string name="contact_nav">Contact</string>
+    <string name="search_nav">Search</string>
+    <string name="search_here">Search here...</string>
+    <string name="refresh">Refresh</string>
+
+
+</resources>

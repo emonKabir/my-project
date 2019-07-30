@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BloodRequest"
+
+    >
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bloodRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_003_blood"
+            android:drawablePadding="@dimen/blood_request_dPadding"
+            android:text="@string/blood_request"
+            android:textColor="@color/blood_request_tColor"
+            android:textSize="@dimen/blood_request_tSize"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blood_request_spinner_background"
+            android:paddingRight="5dp">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+
+                android:id="@+id/spinnerSex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/colorBlack"
+                app:ms_arrowSize="@dimen/arrowSize"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="false"
+                app:ms_floatingLabelColor="#ef28d5"
+                app:ms_floatingLabelText="floating label"
+                app:ms_highlightColor="#e9cc11"
+                app:ms_hint="@string/sex"
+                app:ms_multiline="false"
+                app:ms_thickness="@dimen/thickness"
+
+                />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bloodRqstEditTextHeight"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blood_request_spinner_background"
+            android:hint="Text"
+            android:paddingLeft="@dimen/edittextPaddingLeft"
+
+            />
+
+
+        <TextView
+
+            android:id="@+id/sendTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registrationFieldMarginTop"
+            android:text="@string/send_to"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/headerTextviewSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registrationFieldMarginTop"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/relativeMarginRight"
+                android:layout_weight="1"
+                android:background="@drawable/blood_request_spinner_background"
+                android:paddingRight="@dimen/relativePaddingrRight">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/colorBlack"
+                    app:ms_arrowSize="@dimen/arrowSize"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_floatingLabelColor="#ef28d5"
+                    app:ms_floatingLabelText="floating label"
+                    app:ms_highlightColor="#e9cc11"
+                    app:ms_hint="@string/district"
+                    app:ms_multiline="false"
+                    app:ms_thickness="@dimen/thickness"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/blood_request_spinner_background"
+
+                android:paddingRight="@dimen/relativePaddingrRight">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/colorBlack"
+                    app:ms_arrowSize="@dimen/arrowSize"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_floatingLabelColor="#ef28d5"
+                    app:ms_floatingLabelText="floating label"
+                    app:ms_highlightColor="#e9cc11"
+                    app:ms_hint="@string/Upazila"
+                    app:ms_multiline="false"
+                    app:ms_thickness="@dimen/thickness"
+
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sortBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registrationFieldMarginTop"
+            android:text="@string/sort_by"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/headerTextviewSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/registrationFieldMarginTop"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/relativeMarginRight"
+                android:layout_weight="1"
+                android:background="@drawable/blood_request_spinner_background"
+                android:paddingRight="@dimen/relativePaddingrRight">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+
+                    android:id="@+id/districtSend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/colorBlack"
+                    app:ms_arrowSize="@dimen/arrowSize"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_floatingLabelColor="#ef28d5"
+                    app:ms_floatingLabelText="floating label"
+                    app:ms_highlightColor="#e9cc11"
+                    app:ms_hint="@string/district"
+                    app:ms_multiline="false"
+                    app:ms_thickness="@dimen/thickness"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/blood_request_spinner_background"
+
+                android:paddingRight="@dimen/relativePaddingrRight">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+
+                    android:id="@+id/upazilaSend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ms_alignLabels="false"
+                    app:ms_arrowColor="@color/colorBlack"
+                    app:ms_arrowSize="@dimen/arrowSize"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_floatingLabelColor="#ef28d5"
+                    app:ms_floatingLabelText="floating label"
+                    app:ms_highlightColor="#e9cc11"
+                    app:ms_hint="@string/Upazila"
+                    app:ms_multiline="false"
+                    app:ms_thickness="@dimen/thickness"
+
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/loginHeight"
+            android:layout_marginTop="@dimen/signInMarginTop"
+            android:background="@drawable/button_background"
+            android:gravity="center_horizontal|center"
+            android:text="@string/send"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/loginTextsize"
+
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

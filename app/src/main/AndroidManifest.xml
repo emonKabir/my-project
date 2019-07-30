@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.emon.bdmedic"
+
+
+    >
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupOnly="false"
+        android:fullBackupContent="false"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Search.SearchActivity">
+
+
+        </activity>
+        <activity android:name=".Splash.SplashScreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".NavDrawer.Profile" />
+
+        <activity
+            android:name=".Pharmacologist.PharmacologyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".BottomMenu"
+            android:screenOrientation="portrait">
+
+
+
+        </activity>
+        <activity android:name=".SendOTP" />
+        <activity
+            android:name=".CommonTreatmentList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            >
+
+
+
+        </activity>
+        <activity
+            android:name=".RequestBlood"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Laboratory.LaboratoryValues"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PriceCalculator.PriceCalculator"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Pharmacologist.Pharmacologist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pharmacologist.Category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pharmacologist.GenericName"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pharmacologist.Drugs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pharmacologist.SingleMedicinePrice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Fragments.TMSGMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebView.WebViewTable"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Fragments.DiseseasList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Fragments.DoctorProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebView.SampleTable"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Fragments.ShowMedicineDetails.MedicineTesting"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".Pharmacologist.SingleMedicineInfo"
+            android:screenOrientation="portrait" />
+
+
+        <activity android:name=".Pharmacologist.MedicineView"
+            android:screenOrientation="portrait"
+            />
+    </application>
+
+</manifest>

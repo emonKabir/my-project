@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebView.SampleTable"
+
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="55dp"
+            >
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/webView2"
+                />
+
+            <!-- <ListView
+                 android:id="@+id/listViewMedicineDetails"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+
+                 />-->
+            <com.example.emon.bdmedic.Fragments.ShowMedicineDetails.NonScrollListview
+
+                android:id="@+id/listViewMedicineDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/offWhite"
+                />
+            <TextView
+                android:id="@+id/revisedByS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/revised_by"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                />
+            <TextView
+                android:id="@+id/doctorNameS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/doctorColor"
+                android:textSize="15sp"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:id="@+id/investigationS"
+                android:text="@string/investigation"
+                style="@style/diseaseListText"
+                />
+            <TextView
+                android:id="@+id/adviceS"
+                android:text="@string/advice"
+                style="@style/diseaseListText"
+
+                />
+            <TextView
+                android:id="@+id/signS"
+                android:text="@string/sign"
+                style="@style/diseaseListText"
+                />
+            <TextView
+                android:id="@+id/symptomS"
+                android:text="@string/symptom"
+                style="@style/diseaseListText"
+                />
+
+            <TextView
+                android:id="@+id/onExaminationS"
+                android:text="@string/on_examination"
+                style="@style/diseaseListText"
+                />
+            <TextView
+                android:id="@+id/noteS"
+                style="@style/diseaseListText"
+                android:text="@string/note"
+                />
+            <TextView
+                android:id="@+id/referenceS"
+                android:text="@string/reference"
+                style="@style/diseaseListText"
+                />
+            <TextView
+                android:id="@+id/addNoteS"
+                android:text="ADD NOTE"
+                style="@style/diseaseListText"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
